@@ -1,0 +1,66 @@
+.inputWrapper{
+    width: 100%;
+    height: 300px;
+    
+    // display: flex;
+    // background-color: green;
+    font-family: montserrat;
+    padding: 20px;
+    
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.6),rgba(0,0,0,.4)), url(/images/weatherHero.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .inputCenter{
+        
+        margin-top: 70px;;
+    
+    p{
+        // width: 100%;
+        color: white;
+        text-align: center;
+        // margin: 0 auto;
+        font-size: 25px;
+    }
+    .inputBox{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        // background-color: indigo;
+        margin: 0 auto;
+        .typeBox{
+            background-color: darkgray;
+            border: none;
+            // border-radius: 5px;
+            height: 30px;
+            padding-left: 10px;
+            
+        }
+        .typeBox:focus{
+            background-color: white;
+            
+            box-shadow: none;
+            outline-color: royalblue;
+            outline-style: solid;
+            outline-width: 3px;
+        }
+        .btnWeather{
+            font-family: montserrat;
+            background-color: navy;
+            color: white;
+            cursor: pointer;
+            // padding: 5px;
+            border: none;
+            border-radius: 8px;
+            width: auto;
+            transition: all 0.5s;
+            &:hover {
+                background-color: royalblue;
+                transition: all 0.5s;
+                box-shadow: 0px 3px 6px rgb(89, 116, 197);
+                padding: 5px;
+            }
+            }        
+        }
+    }
+}

@@ -1,0 +1,50 @@
+nav{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
+    font-family: montserrat;
+    align-items: center;
+    .logo{
+        
+        // background-color: deepskyblue;
+        // align-self: center;
+        // margin: 0 auto;
+        // align-content: center;
+        // line-height: 100px;
+        
+            
+        h1{
+            padding-top: 10px;
+            color: navy;
+        // text-align: center;
+            // text-align: center;
+            // align-self: center;
+            // align-content: center;
+            // line-height: 60px;
+        }
+    }
+    .links{
+        width: 300px;
+        display: flex;
+        color: navy;
+        // text-align: center;
+        // align-self: center;
+        // background-color: darkorange;
+        justify-content: space-between;
+        
+        a{  
+            color: navy;
+            text-decoration: none;
+            transition: ease-in 0.3s;
+            &:hover{
+                font-weight: 700;
+                color: royalblue;
+            }
+        }
+    }
+    .logBtn{
+        width:100%;
+        color: deepskyblue;
+        // background-color: gray;
+    }
+}

@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.contentWrapperTop {
+  width: 630px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: montserrat;
+  justify-content: space-between;
+}
+.contentWrapperTop .contentOne {
+  background-color: #464646;
+  width: 200px;
+  padding-left: 15px;
+  padding-top: 15px;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px black;
+  color: white;
+}
+.contentWrapperTop .contentTwo {
+  background-color: #464646;
+  width: 400px;
+  padding: 10px;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px black;
+  color: white;
+}
+.contentWrapperTop .contentTwo .splitWrapper {
+  display: flex;
+}
+.contentWrapperTop .contentTwo .splitWrapper .currentDiv {
+  width: 110px;
+  height: 110px;
+}
+.contentWrapperTop .contentTwo .splitWrapper .currentDiv img {
+  width: 100%;
+  height: 100%;
+}
+.contentWrapperTop .contentTwo .splitWrapper .currentTempDiv {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.contentWrapperTop .contentTwo .tempCDiv {
+  padding-top: 10px;
+  height: 40px;
+}
+.contentWrapperTop .contentTwo .lastUpdatedDiv {
+  padding-top: 10px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-around;
+  font-family: montserrat;
+  align-items: center;
+}
+nav .logo h1 {
+  padding-top: 10px;
+  color: navy;
+}
+nav .links {
+  width: 300px;
+  display: flex;
+  color: navy;
+  justify-content: space-between;
+}
+nav .links a {
+  color: navy;
+  text-decoration: none;
+  transition: ease-in 0.3s;
+}
+nav .links a:hover {
+  font-weight: 700;
+  color: royalblue;
+}
+nav .logBtn {
+  width: 100%;
+  color: deepskyblue;
+}
+
+.inputWrapper {
+  width: 100%;
+  height: 300px;
+  font-family: montserrat;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/images/weatherHero.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inputWrapper .inputCenter {
+  margin-top: 70px;
+}
+.inputWrapper .inputCenter p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.inputWrapper .inputCenter .inputBox {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.inputWrapper .inputCenter .inputBox .typeBox {
+  background-color: darkgray;
+  border: none;
+  height: 30px;
+  padding-left: 10px;
+}
+.inputWrapper .inputCenter .inputBox .typeBox:focus {
+  background-color: white;
+  box-shadow: none;
+  outline-color: royalblue;
+  outline-style: solid;
+  outline-width: 3px;
+}
+.inputWrapper .inputCenter .inputBox .btnWeather {
+  font-family: montserrat;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  width: auto;
+  transition: all 0.5s;
+}
+.inputWrapper .inputCenter .inputBox .btnWeather:hover {
+  background-color: royalblue;
+  transition: all 0.5s;
+  box-shadow: 0px 3px 6px #5974c5;
+  padding: 5px;
+}
+
+.forecastBtn {
+  width: 155px;
+  height: 30px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.forecastBtn:hover {
+  background-color: royalblue;
+  transition: all 0.5s;
+  box-shadow: 0px 3px 6px #5974c5;
+  padding: 5px;
+}
+.forecastBtn:disabled {
+  background-color: #8f8f8f;
+  box-shadow: none;
+  cursor: default;
+}
+
+.contentWrapperBottom {
+  width: 625px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.contentWrapperBottom .forcastList {
+  display: flex;
+  justify-content: space-between;
+  font-family: montserrat;
+}
+.contentWrapperBottom .forcastList .dayOne {
+  width: 170px;
+  background-color: #464646;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px black;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.contentWrapperBottom .forcastList .dayTwo {
+  width: 170px;
+  background-color: #464646;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px black;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.contentWrapperBottom .forcastList .dayThree {
+  width: 170px;
+  background-color: #464646;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px black;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
