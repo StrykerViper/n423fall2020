@@ -1,7 +1,7 @@
 var apiKey = "7da4fa52d94d44ab8c4201938201409";
 var baseURL = `//api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
 
-//stuff for homework
+
 var forcastBaseURL = `//api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
 var forcastEndURL = `&days=3`;
 var storedZipOrCity = {};
@@ -18,21 +18,32 @@ function getData(fullURL) {
             <p>Chance of Rain: ${data.current.precip_in}%</p>
             <p>Uv Index: ${data.current.uv}</p>
             <p>Vison: ${data.current.vis_miles} miles</p>
+            <p>Country: ${data.location.country} </p>
+            <p>Pressure MB: ${data.current.pressure_mb} </p>
+            <p>Latitude: ${data.location.lat} </p>
+            <p>Longitude: ${data.location.lon} </p>
+            
             `
         )
         
-        $(".cityDiv").html(`<h2>${data.location.name}</h2>`)
+        $(".cityDiv").html(`<h2>${data.location.name}, ${data.location.region}</h2>`)
         $(".currentDiv").html(`<p><img src="${data.current.condition.icon}"</p>`)
         $(".currentTempDiv").html(`<p>${data.current.temp_f}°F</p>`)
         $(".tempCDiv").html(`<p>${data.current.temp_c}°C</p>`)
-        $(".lastUpdatedDiv").html(`<p>Updated: ${data.current.last_updated}</p>`)
+        $(".lastUpdatedDiv").html(`<p>Updated: ${data.current.last_updated}</p>
+        <p>Local time: ${data.location.localtime} </p>
+            <p>Wind Kph: ${data.current.wind_kph}KPH </p>
+            
+            <p>Cloud Cover: ${data.current.cloud} </p>
+            <p>Wind Gust: ${data.current.gust_mph}MPH </p>
+        `)
              
 
     })
 
 .catch(function (error){
     console.log(error);
-    
+    // console.log("zip code bad");
     alert("Invalid Input or no connection");
     });
 }
