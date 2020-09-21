@@ -32,7 +32,7 @@ function getData(fullURL) {
 
 .catch(function (error){
     console.log(error);
-    // console.log("zip code bad");
+    
     alert("Invalid Input or no connection");
     });
 }
