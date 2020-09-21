@@ -1,8 +1,8 @@
 var apiKey = "7da4fa52d94d44ab8c4201938201409";
-var baseURL = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
+var baseURL = `//api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
 
 //stuff for homework
-var forcastBaseURL = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
+var forcastBaseURL = `//api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=`;
 var forcastEndURL = `&days=5`;
 var storedZipOrCity = {};
 
