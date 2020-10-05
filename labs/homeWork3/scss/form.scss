@@ -1,0 +1,29 @@
+.formDiv{
+    margin: 0 auto;
+    width: 200px;
+    // display: flex;
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    font-family: montserrat;
+    .inputDiv{
+        margin-top: 10px;
+        font-family: montserrat;
+    }
+    .inputBtn{
+        margin-top: 10px;
+        font-family: montserrat;
+        padding: 5px;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            background-color: #84c2db;
+            transition: all 0.5s;
+            
+            padding: 5px;
+            // color: white;
+    }
+}
+}
