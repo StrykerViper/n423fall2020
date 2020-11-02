@@ -1,5 +1,5 @@
 var _db;
-//details of document
+//list of album details to upload to firebase
 var albumDetails = [
 
     {
@@ -113,149 +113,21 @@ function initListeners() {
     });
     $("#get").click(function () {
         // this gets all of them
-        _db.collection("albums").get().then(function (querySnapshot) {
-            querySnapshot.forEach(function () {
-
-                $("#displayAlbums").html(`
+        _db.collection("albums").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                console.log(`${doc.id}  ${doc.data().artistName}`);
+                // displays albums
+                $("#displayAlbums").append(`
                 <div class="outputWrap"> 
                 <div class="albumInfo">
-                <h1>${albumDetails[0].albumName}</h1> 
-                <p>Artist: ${albumDetails[0].artistName}</p> 
-                <p>Genre: ${albumDetails[0].genre}</p>
+                <h1>${doc.data().albumName}</h1> 
+                <p>Artist: ${doc.data().artistName}</p> 
+                <p>Genre: ${doc.data().genre}</p>
                 </div>
-                <img class="albumImg" src="${albumDetails[0].albumPhoto}">
+                <img class="albumImg" src="${doc.data().albumPhoto}">
                 </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[1].albumName}</h1> 
-                <p>Artist: ${albumDetails[1].artistName}</p> 
-                <p>Genre: ${albumDetails[1].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[1].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[2].albumName}</h1> 
-                <p>Artist: ${albumDetails[2].artistName}</p> 
-                <p>Genre: ${albumDetails[2].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[2].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[3].albumName}</h1> 
-                <p>Artist: ${albumDetails[3].artistName}</p> 
-                <p>Genre: ${albumDetails[3].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[3].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[4].albumName}</h1> 
-                <p>Artist: ${albumDetails[4].artistName}</p> 
-                <p>Genre: ${albumDetails[4].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[4].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[5].albumName}</h1> 
-                <p>Artist: ${albumDetails[5].artistName}</p> 
-                <p>Genre: ${albumDetails[5].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[5].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[6].albumName}</h1> 
-                <p>Artist: ${albumDetails[6].artistName}</p> 
-                <p>Genre: ${albumDetails[6].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[6].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[7].albumName}</h1> 
-                <p>Artist: ${albumDetails[7].artistName}</p> 
-                <p>Genre: ${albumDetails[7].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[7].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[8].albumName}</h1> 
-                <p>Artist: ${albumDetails[8].artistName}</p> 
-                <p>Genre: ${albumDetails[8].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[8].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[9].albumName}</h1> 
-                <p>Artist: ${albumDetails[9].artistName}</p> 
-                <p>Genre: ${albumDetails[9].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[9].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[10].albumName}</h1> 
-                <p>Artist: ${albumDetails[10].artistName}</p> 
-                <p>Genre: ${albumDetails[10].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[10].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[11].albumName}</h1> 
-                <p>Artist: ${albumDetails[11].artistName}</p> 
-                <p>Genre: ${albumDetails[11].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[11].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[12].albumName}</h1> 
-                <p>Artist: ${albumDetails[12].artistName}</p> 
-                <p>Genre: ${albumDetails[12].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[12].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[13].albumName}</h1> 
-                <p>Artist: ${albumDetails[13].artistName}</p> 
-                <p>Genre: ${albumDetails[13].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[13].albumPhoto}">
-                </div>
-
-                <div class="outputWrap"> 
-                <div class="albumInfo">
-                <h1>${albumDetails[14].albumName}</h1> 
-                <p>Artist: ${albumDetails[14].artistName}</p> 
-                <p>Genre: ${albumDetails[14].genre}</p>
-                </div>
-                <img class="albumImg" src="${albumDetails[14].albumPhoto}">
-                </div>
-
-             
-
                 `);
-               
+  
             });
         });
     
