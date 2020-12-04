@@ -1,0 +1,12 @@
+.addWrap {
+  background-color: #46798F;
+  width: 100%;
+  height: 100vh;
+  font-family: Montserrat;
+}
+.addWrap p {
+  font-size: 60px;
+  font-family: Montserrat;
+  font-weight: 800;
+  text-shadow: 4px 4px 10px black;
+}

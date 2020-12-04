@@ -1,0 +1,8 @@
+.detailsWrap {
+  width: 100%;
+  background-color: #46798F;
+  height: 100vh;
+}
+.detailsWrap .itemWrap {
+  background-color: black;
+}

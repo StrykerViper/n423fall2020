@@ -1,0 +1,110 @@
+.loginWrap{
+    background-color:  #46798F;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    .loginDiv{
+        // background-color: rgb(155, 34, 34);
+        width: 422px;
+        // height: 100%;
+        p{
+            font-size: 52px;
+            font-weight: 800;
+            font-family: montserrat;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form{
+            background-color: white;
+            width: 422px;
+            height: 488px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 10px 10px 16px black;
+            .inputWrap{
+                // background-color: brown;
+                display: flex;
+                flex-direction: column;
+                label{
+                    font-family: montserrat;
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+                .input{
+                width: 357px;
+                height: 37px;
+                // border: none;
+               
+                }
+                
+            }
+            .formLoginBtn{
+                width: 357px;
+                height: 61px;
+                background-color: #46798F;
+                color: white;
+                border-radius: 31px;
+                font-size: 30px;
+                font-family: montserrat;
+                font-weight: 800;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 90px;
+            }
+        }
+    }
+    .signUpDiv{
+        width: 422px;
+        p{
+            font-size: 52px;
+            font-weight: 800;
+            font-family: montserrat;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .loginForm{
+            background-color: white;
+            width: 422px;
+            height: 488px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 10px 10px 16px black;
+            .inputWrap{
+                // background-color: brown;
+                display: flex;
+                flex-direction: column;
+                label{
+                    font-family: montserrat;
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+                .input{
+                width: 357px;
+                height: 37px;
+                // border: none;
+               
+                }
+                
+            }
+            .formLoginBtn{
+                width: 357px;
+                height: 61px;
+                background-color: #46798F;
+                color: white;
+                border-radius: 31px;
+                font-size: 30px;
+                font-family: montserrat;
+                font-weight: 800;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 90px;
+            }
+        }
+    }
+}

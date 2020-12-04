@@ -1,0 +1,43 @@
+<div class="addWrap">
+    <p>Add Item</p>
+    <div class="mainWrap">
+        
+        <form id="addForm" class="formWrap">
+            <div class="leftInputs">
+                <div class="inputWrap">
+                    <label for="nameInput">Item Name *</label>
+                    <input name="name" type="text" id="nameInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="descInput">Item Description *</label>
+                    <textarea name="desc" class="descInput" type="text" id="descInput"></textarea>
+                </div>
+            </div>
+            <div class="rightInputs">
+                <div class="inputWrap">
+                    <label for="priceInput">Item Price *</label>
+                    <input name="price" type="number" id="priceInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="urlInput">Img Url *</label>
+                    <input name="url" type="text" id="urlInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="category">Category *</label>
+                    <select name="category" id="category">
+                        <option value="home">Home</option>
+                        <option value="auto">Auto</option>
+                        <option value="movies">Movies</option>
+                        <option value="games">Games</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+                <div class="btnWrap">
+                    <button id="home" onclick="cancelBtn(id)" class="cancelBtn" type="button">Cancel</button>
+                    <button id="addBtn" class="addBtn" type="button">Add</button>
+                </div>
+            </div>    
+        </form>
+    </div>
+</div>

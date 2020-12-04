@@ -1,0 +1,9 @@
+.loginWrap {
+  background-color: #46798F;
+  width: 100%;
+  height: 100vh;
+}
+.loginWrap .loginDiv {
+  background-color: #9b2222;
+  width: 422px;
+}

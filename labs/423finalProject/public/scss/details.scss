@@ -1,0 +1,62 @@
+.detailsWrap{
+    width: 100%;
+    background-color: #46798F;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .itemWrap{
+        background-color: black;
+        width: 604px;
+        height: 818px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        img{
+            background-color: rgb(0, 0, 0);
+            width: 604px;
+            height: 368px;
+        }
+        .bottomDetailDiv{
+            background-color: white;
+            width: 604px;
+            height: 450px;
+            margin-top: -5px;
+            font-family: Montserrat;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            position: relative;
+            .itemNamePrice{
+                background-color: rgb(187, 187, 187);
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 30px;
+                }
+            }
+            .descDiv{
+                // background-color: forestgreen;
+                padding: 20px;
+                p{
+                    font-size: 20px;
+                }
+                
+            }
+            .emailOfferBtn{
+                width: 228px;
+                height: 40px;
+                background-color: #006D3E;
+                color: white;
+                border-radius: 22px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                position: absolute;
+                bottom: 10px;
+            }
+        }
+    }
+}

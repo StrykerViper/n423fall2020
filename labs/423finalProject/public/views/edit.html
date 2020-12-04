@@ -1,0 +1,40 @@
+<div class="editWrap">
+    <p>Edit Item</p>
+    <div class="mainWrap">
+        
+        <form id="editForm" class="formWrap">
+            <div class="leftInputs">
+                <div class="inputWrap">
+                    <label for="nameInput">Item Name *</label>
+                    <input name="name" type="text" id="nameInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="descInput">Item Description *</label>
+                    <textarea name="desc" class="descInput" type="text" id="descInput"></textarea>
+                </div>
+            </div>
+            <div class="rightInputs">
+                <div class="inputWrap">
+                    <label for="priceInput">Item Price *</label>
+                    <input name="price" type="number" id="priceInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="urlInput">Img Url *</label>
+                    <input name="url" type="text" id="urlInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="category">Category *</label>
+                    <select name="category" id="category">
+                        <option value="home">Home</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </div>
+                <div class="btnWrap">
+                    <button id="yourISO" onclick="cancelBtn(id)" class="cancelBtn" type="button">Cancel</button>
+                    <button id="editConfirm" class="addBtn" type="button">Confirm</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
